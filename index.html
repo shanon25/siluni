@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2026 New Year 💜</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="passcode-page">
+<div class="box">
+<h1>🎆 2026 New Year Wish 🎆</h1>
+<p>Only for my Chubu 💜</p>
+<input type="password" id="passcode" placeholder="Enter the secret 🤫" value="">
+<button id="mybtn" onclick="checkPasscode()">Unlock 🗝️</button>
+
+<script>
+var input = document.getElementById("passcode");
+input.addEventListener("keypress", function(event) {
+    if(event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("mybtn").click();
+    };
+});
+
+</script>
+<p class="hint">Hint: Ch*** + 2026 🧿</p>
+<p id="error"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
